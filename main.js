@@ -40,7 +40,7 @@ function workcount(){
 myli.innerHTML = works;
 result.append(myli);
 document.querySelector("#works").value="";
-        return true;
+        return false;
     }
     
     
