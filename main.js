@@ -29,7 +29,7 @@ function workcount(){
 
     var works = document.querySelector("#works").value;  
     
-    var result = document.getElementById("#resuit");
+    var result = document.getElementById("#result");
 
     
     if(works==""){
