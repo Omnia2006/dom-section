@@ -25,28 +25,27 @@ document.querySelectorAll("button").forEach( function ( zaki){
 
 // start  function section
 
-function workcount(){
+function jops(){
+    var work = document.querySelector("#works").value;
+    var result = document.querySelector("#results");
+if (work==""){
+    return false;
 
-    var works = document.querySelector("#works").value;  
-    
-    var result = document.getElementById("#result");
+}else{
+    var myli = document.createElement("li");
+    myli.innerHTML = work;
 
-    
-    if(works==""){
-        return false;
-    }
-    else{
-       var myli = document.createElement("li");   //<li></li>
-myli.innerHTML = works;
-result.append(myli);
-document.querySelector("#works").value="";
-        return false;
-    }
-    
-    
-    }
-    
-    
+    var colors = ["red"];
+
+        myli.style.color = colors   ;
+        myli.style.padding = "10px";
+        myli.style.margin = "5px 0";
+
+    result.append(myli);
+    document.querySelector("#works").value = "";
+    return false;
+}
+}
     
     
     // end  function  section
