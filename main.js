@@ -25,9 +25,9 @@ document.querySelectorAll("button").forEach( function ( zaki){
 
 // start  function section
 
-function jops(){
+function workcount(){
     var work = document.querySelector("#works").value;
-    var result = document.querySelector("#results");
+    var results = document.querySelector("#result");
 if (work==""){
     return false;
 
@@ -41,7 +41,7 @@ if (work==""){
         myli.style.padding = "10px";
         myli.style.margin = "5px 0";
 
-    result.append(myli);
+    results.append(myli);
     document.querySelector("#works").value = "";
     return false;
 }
